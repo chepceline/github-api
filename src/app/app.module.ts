@@ -10,6 +10,7 @@ import { GitFormComponent } from './git-form/git-form.component'; // Imports Git
 import { GitSearchResultsComponent } from './git-search-results/git-search-results.component';
 import { SearchGithubService } from './search-github.service'; // Imports SearchGithubService from src/app/search-github.service.ts
 import { DateFormatPipe } from './date-format.pipe'; // Imports DateFormatPipe from src/app/date-format.pipe
+import { DaysCountPipe } from './days-count.pipe';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { DateFormatPipe } from './date-format.pipe'; // Imports DateFormatPipe f
     GitFormComponent,
     GitSearchResultsComponent,
     DateFormatPipe,
+    DaysCountPipe
     
   ],
   imports: [
@@ -25,7 +27,8 @@ import { DateFormatPipe } from './date-format.pipe'; // Imports DateFormatPipe f
     AppRoutingModule,
     HttpClientModule,
     GitRoutingModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [SearchGithubService],
   bootstrap: [AppComponent]
