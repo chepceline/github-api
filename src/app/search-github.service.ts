@@ -41,7 +41,7 @@ export class SearchGithubService {
 	        html_url:string   
 	    }
 
-	    let promise =new Promise((resolve,reject)=>{
+	    let promise =new Promise <void>((resolve,reject)=>{
 	    	// We then use the getmethod and pass to the API URL. we then call the subscribe function that takes in the response function that is called when the API request is successful and returns a response.
 	        this.http.get<ApiResponse>("https://api.github.com/users/" + username).toPromise().then(response=>{
 	            // Mapping The Response we get to Every Property that we'll Eventually Use to Display in our git-search-results.component.html
@@ -80,7 +80,7 @@ export class SearchGithubService {
 	        )
 	    })
 
-	    return promise
+		return promise
 	}
 
 	
