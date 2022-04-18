@@ -33,7 +33,7 @@ export class SearchGithubService {
 	        bio:string,
 	        public_repos:number,
 	        login:string,
-	        avatar_url:string,
+	        avatar_url?:string,
 	        created_at:Date, 
 	        updated_at:Date,
 	        name:string,
