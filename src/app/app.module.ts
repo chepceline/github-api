@@ -24,7 +24,8 @@ import { DateFormatPipe } from './date-format.pipe'; // Imports DateFormatPipe f
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    GitRoutingModule
+    GitRoutingModule,
+    FormsModule
   ],
   providers: [SearchGithubService],
   bootstrap: [AppComponent]
